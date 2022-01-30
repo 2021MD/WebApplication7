@@ -1,0 +1,22 @@
+﻿@model WebApplication7.Models.Person
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>Folgender Datensatz wird gelöscht:</p>
+    <p>@Model.Vorname @Model.Nachname</p>
+
+    <form asp-action="Delete">
+        <input type="hidden" name="Id" value="@Model.Id" />
+        <input type="submit" value="Entfernen" />
+    </form>
+</body>
+</html>

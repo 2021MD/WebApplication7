@@ -1,0 +1,21 @@
+﻿@model WebApplication7.Models.Person
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <form asp-action="Create">
+        <p>Vorname: <input type="text" name="Vorname" /></p>
+        <p>Nachname: <input type="text" name="Nachname" /></p>
+        <p>Geburtsdatum: <input type="text" name="Geburtsdatum" /></p>
+        <input type="submit" value="Speichern" />
+    </form>
+</body>
+</html>
